@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4451207, g: 0.4947223, b: 0.5737985, a: 1}
+  m_IndirectSpecularColor: {r: 0.44512063, g: 0.4947223, b: 0.57379824, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12758,6 +12758,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1745328941}
   - component: {fileID: 1745328942}
+  - component: {fileID: 1745328943}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -12796,6 +12797,19 @@ MonoBehaviour:
   spawnPoint: {fileID: 1547451852}
   timeBetweenWaves: 5.5
   waveCountdownText: {fileID: 824182434}
+--- !u!114 &1745328943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745328940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6314c1d776fa04e338749952708c975f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardTurretPrefab: {fileID: 7368797652040327951, guid: fbb38b3959a23354bbebe08ff7172e21, type: 3}
 --- !u!1 &1757384588
 GameObject:
   m_ObjectHideFlags: 0

@@ -873,3 +873,43 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 622.802081 seconds.
+  path: Assets/Imports/StandardTurret
+  artifactKey: Guid(eea0ca7aeef064feab7e0bf35a04aa0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/StandardTurret using Guid(eea0ca7aeef064feab7e0bf35a04aa0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fe6121fdf04bfcbc28d09f2ad09e25b') in 0.014575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 22.019589 seconds.
+  path: Assets/Imports/MissileLauncher
+  artifactKey: Guid(8b85d8c6605bc434cb88eb530ac67058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/MissileLauncher using Guid(8b85d8c6605bc434cb88eb530ac67058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f91fb55d638069fe028232b35b2ae71') in 0.000560 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 234.583129 seconds.
+  path: Assets/Imports/MissileLauncher/Missile Launcher.fbx
+  artifactKey: Guid(3e42fcdb8ffdb4e1fb6c2c56d6873673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/MissileLauncher/Missile Launcher.fbx using Guid(3e42fcdb8ffdb4e1fb6c2c56d6873673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de18346ba82feff0e0f93eabbf5494aa') in 0.164907 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 212.304934 seconds.
+  path: Assets/Imports/MissileLauncher/Materials
+  artifactKey: Guid(43513965ab21d4cdc9ad2eb5b7730011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/MissileLauncher/Materials using Guid(43513965ab21d4cdc9ad2eb5b7730011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da836e4df048598eaa07aeda4b612bba') in 0.001068 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 26.395139 seconds.
+  path: Assets/Imports/MissileLauncher/Materials/New Folder
+  artifactKey: Guid(06043bad82cf7481ba3425ad77c465fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imports/MissileLauncher/Materials/New Folder using Guid(06043bad82cf7481ba3425ad77c465fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02b5fc81d45acddc74a522db0ed32727') in 0.000461 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0

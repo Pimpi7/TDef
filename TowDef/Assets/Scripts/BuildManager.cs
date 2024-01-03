@@ -6,28 +6,41 @@ public class BuildManager : MonoBehaviour
 {
     public static BuildManager instance;
 
-    void Awake ()
+    void Awake()
     {
         if (instance != null)
         {
-            Debug.LogError ("piu buildmanager");
+            Debug.LogError("piu buildmanager");
             return;
         }
         instance = this;
     }
 
     public GameObject standardTurretPrefab;
-
     public GameObject anotherTurretPrefab2;
-    private GameObject turretToBuild;
+    private TurretBlueprint turretToBuild;
 
-    public GameObject GetTurretToBuild ()
+    public bool CanBuild { get { return turretToBuild != null; } }
+
+    public void BuildTurretOn(Node node)
     {
-        return turretToBuild;
+        if (PlayerStats.Money < turretToBuild.cost)
+        {
+            Debug.Log ("POVERO");
+            return;
+        }
+
+        PlayerStats.Money =  PlayerStats.Money - turretToBuild.cost;
+        // Instantiate the prefab directly from turretToBuild
+        GameObject turret = Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
+        node.turret = turret;
+
+        Debug.Log("Turret built, sei povero: " + PlayerStats.Money);
     }
 
-    public void SetTurretToBuild (GameObject turret)
+    public void SelectTurretToBuild(TurretBlueprint turret)
     {
         turretToBuild = turret;
     }
 }
+

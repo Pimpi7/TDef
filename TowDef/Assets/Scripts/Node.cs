@@ -3,8 +3,9 @@ using UnityEngine.EventSystems;
 public class Node : MonoBehaviour
 {
     public Color hoverColor;
-
-    private GameObject turret;
+    public Vector3 positionOffset;
+    [Header("Optional")]
+    public GameObject turret;
 
     private Renderer rend;
 
@@ -22,7 +23,7 @@ public class Node : MonoBehaviour
 
     void OnMouseDown ()
     {
-        if (buildManager.GetTurretToBuild() == null)
+        if (!buildManager.CanBuild)
             return;
         if (turret != null)
         {
@@ -30,8 +31,12 @@ public class Node : MonoBehaviour
             return;
         }
         // SI COSTRUISCE 
-        GameObject turretToBuild = buildManager.GetTurretToBuild();
-        turret = (GameObject)Instantiate(turretToBuild, transform.position, transform.rotation);
+        buildManager.BuildTurretOn(this);
+    }
+
+    public Vector3 GetBuildPosition ()
+    {
+        return transform.position + positionOffset;
     }
 
     void OnMouseEnter()
@@ -39,7 +44,7 @@ public class Node : MonoBehaviour
         if (EventSystem.current.IsPointerOverGameObject())
             return;
         
-        if (buildManager.GetTurretToBuild() == null)
+        if (!buildManager.CanBuild)
             return;
         // ogni volta che il mouse ci passa sopra si attiva 
         rend.material.color = hoverColor;

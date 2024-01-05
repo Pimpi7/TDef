@@ -58,4 +58,3 @@ public class Node : MonoBehaviour
         rend.material.color = startColor;
     }
 }
-

@@ -31,12 +31,12 @@ public class BuildManager : MonoBehaviour
             return;
         }
 
-        PlayerStats.Money =  PlayerStats.Money - turretToBuild.cost;
+        PlayerStats.Money -= turretToBuild.cost;
         // Instantiate the prefab directly from turretToBuild
         GameObject turret = Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
         node.turret = turret;
 
-        Debug.Log("Turret built, sei povero: " + PlayerStats.Money);
+        Debug.Log("Turret built, ti è rimasto: " + PlayerStats.Money);
     }
 
     public void SelectTurretToBuild(TurretBlueprint turret)

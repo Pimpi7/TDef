@@ -5,7 +5,7 @@ public class Enemy : MonoBehaviour
 {
     public float speed = 10f;
     public int health = 100;
-    public int value = 50;
+    public int earnedMoney = 50;
     public GameObject deathEffect;
     private Transform target;
     private int wavepointIndex = 0;
@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        PlayerStats.Money += value;
+        PlayerStats.Money += earnedMoney;
         GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(effect, 5f);
         Destroy(gameObject);

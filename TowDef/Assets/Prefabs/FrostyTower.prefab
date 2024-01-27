@@ -450,6 +450,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FreezeImpactEffect
       objectReference: {fileID: 0}
+    - target: {fileID: 5939859114888035971, guid: 2e45438f257fc0049a65058619c2fbe7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e5447bf88dd262f40962d70964ec4b37, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

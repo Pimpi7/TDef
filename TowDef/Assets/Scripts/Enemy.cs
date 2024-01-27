@@ -3,11 +3,17 @@ using Vector3 = UnityEngine.Vector3;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 10f;
+    public float startSpeed = 10f;
+    [HideInInspector]
+    public float speed;
     public float health = 100;
     public int earnedMoney = 50;
     public GameObject deathEffect;
     
+    void Start() {
+
+        speed = startSpeed;
+    }
 
     public void TakeDamage(float amount)
     {
@@ -16,6 +22,13 @@ public class Enemy : MonoBehaviour
         {
             Die();
         }
+    }
+
+    public void Slow(float amount) {
+        
+        speed = startSpeed * (1f-amount);
+    
+
     }
 
     void Die()

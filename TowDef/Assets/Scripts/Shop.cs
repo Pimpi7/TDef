@@ -5,6 +5,7 @@ public class Shop : MonoBehaviour
     public TurretBlueprint standardTurret;
     public TurretBlueprint missileLauncher;
     public TurretBlueprint laserBeamer;
+    public TurretBlueprint frostyTower;
     BuildManager buildManager;
 
     void Start()
@@ -27,5 +28,11 @@ public class Shop : MonoBehaviour
     {
         Debug.Log ("Laser Beamer purchased");
         buildManager.SelectTurretToBuild(laserBeamer);
+    }
+
+    public void SelectFrostyTower()
+    {
+        Debug.Log ("Frosty tower purchased");
+        buildManager.SelectTurretToBuild(frostyTower);
     }
 }

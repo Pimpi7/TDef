@@ -24,11 +24,15 @@ public class Node : MonoBehaviour
 
     void OnMouseDown ()
     {
+          if (EventSystem.current.IsPointerOverGameObject())
+            return;
+
         if (!buildManager.CanBuild)
             return;
+
         if (turret != null)
         {
-            Debug.Log("Spazio Occupato");
+            buildManager.SelectNode(this);
             return;
         }
         // SI COSTRUISCE 

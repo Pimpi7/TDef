@@ -5,6 +5,7 @@ public class Node : MonoBehaviour
     public Color hoverColor;
     public Color notEnoughMoneyColor;
     public Vector3 positionOffset;
+    
     [Header("Optional")]
     public GameObject turret;
 

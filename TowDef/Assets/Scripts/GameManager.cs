@@ -25,8 +25,7 @@ public class GameManager : MonoBehaviour
     }
     void EndGame()
     {
-        GameIsOver
- = true;
+        GameIsOver = true;
         gameOverUI.SetActive(true);
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4064870112762345984}
   - component: {fileID: 3464096521875937952}
   - component: {fileID: 3171052316821059069}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4398295856703953280}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PartToRotate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 131222718970223620}
   - component: {fileID: 6233144477492956197}
   - component: {fileID: 4537195676845833931}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1088998059627103299}
   - component: {fileID: 6252697574445439580}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: StandardTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,11 +249,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 15
+  bulletPrefab: {fileID: 3794253678190293106, guid: 24ac1c65ea860954a9955d0bb2eebc90, type: 3}
   fireRate: 1
+  useLaser: 0
+  damageOverTime: 30
+  slowAmount: 0.5
+  lineRenderer: {fileID: 0}
+  impactEffect: {fileID: 0}
+  impactLight: {fileID: 0}
   enemyTag: Enemy
   partToRotate: {fileID: 4398295856703953280}
   turnSpeed: 10
-  bulletPrefab: {fileID: 3794253678190293106, guid: 24ac1c65ea860954a9955d0bb2eebc90, type: 3}
   firePoint: {fileID: 8227703111269014204}
 --- !u!1 &8677647464658167378
 GameObject:
@@ -264,7 +270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8227703111269014204}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

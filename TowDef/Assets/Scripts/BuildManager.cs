@@ -23,26 +23,11 @@ public class BuildManager : MonoBehaviour
     public bool CanBuild { get { return turretToBuild != null; } }
     public bool HasMoney { get { return PlayerStats.Money >= turretToBuild.cost; } }
 
-    public void BuildTurretOn(Node node)
-    {
-        if (PlayerStats.Money < turretToBuild.cost)
-        {
-            Debug.Log ("POVERO");
-            return;
-        }
-
-        PlayerStats.Money -= turretToBuild.cost;
-        // Instantiate the prefab directly from turretToBuild
-        GameObject turret = Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
-        node.turret = turret;
-
-        Debug.Log("Turret built, ti è rimasto: " + PlayerStats.Money);
-    }
-
     public void SelectNode(Node node) 
     {
         if(selectedNode == node) 
         {
+            //Debug.Log("Ehi");
             DeselectNode();
             return;
         }
@@ -63,6 +48,11 @@ public class BuildManager : MonoBehaviour
     {
         turretToBuild = turret;
         DeselectNode();                                                 
+    }
+
+    public TurretBlueprint GetTurretToBuild()
+    {
+        return turretToBuild;
     }
 }
 

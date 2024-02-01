@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4064870112762345984}
   - component: {fileID: 3464096521875937952}
   - component: {fileID: 3171052316821059069}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,9 +61,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d326c8ce7e1f43447a76cd3872f2e3ba, type: 2}
-  - {fileID: 2100000, guid: f5e0811518092884999d6eccb2701732, type: 2}
-  - {fileID: 2100000, guid: c8b54077451505f499d3cd863e25c428, type: 2}
+  - {fileID: 2100000, guid: 65516f1c8c9aebb42815d63e39346cbf, type: 2}
+  - {fileID: 2100000, guid: 4fde0b2c22906e14c91d15a82c3fb885, type: 2}
+  - {fileID: 2100000, guid: a84a1fc793a6d874183465c4a5414045, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,7 +94,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4398295856703953280}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PartToRotate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 131222718970223620}
   - component: {fileID: 6233144477492956197}
   - component: {fileID: 4537195676845833931}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ Transform:
   m_GameObject: {fileID: 6625484014600549023}
   serializedVersion: 2
   m_LocalRotation: {x: 0.5000001, y: 0.50000006, z: -0.4999999, w: -0.49999994}
-  m_LocalPosition: {x: -1.8393269, y: 1.4293928, z: 0.00000019205154}
+  m_LocalPosition: {x: -1.84, y: 1.39, z: 0.00000019205154}
   m_LocalScale: {x: 0.044139665, y: 0.044139665, z: 0.044139665}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -179,8 +179,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f5e0811518092884999d6eccb2701732, type: 2}
-  - {fileID: 2100000, guid: c8b54077451505f499d3cd863e25c428, type: 2}
+  - {fileID: 2100000, guid: 4fde0b2c22906e14c91d15a82c3fb885, type: 2}
+  - {fileID: 2100000, guid: a84a1fc793a6d874183465c4a5414045, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -212,8 +212,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1088998059627103299}
   - component: {fileID: 6252697574445439580}
-  m_Layer: 0
-  m_Name: AnotherTurret
+  m_Layer: 2
+  m_Name: StandardTurret_Upgraded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -227,15 +227,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7368797652040327951}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.0039618993, z: 0, w: 0.9999922}
-  m_LocalPosition: {x: 7.4135857, y: 1.54, z: 68.83087}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.41, z: 0}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4398295856703953280}
   - {fileID: 131222718970223620}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0.454, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6252697574445439580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,12 +248,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 086cf2a7ba51bba4098db2a734fda571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 15
-  fireRate: 1
+  range: 20
+  bulletPrefab: {fileID: 3794253678190293106, guid: 24ac1c65ea860954a9955d0bb2eebc90, type: 3}
+  fireRate: 1.5
+  useLaser: 0
+  damageOverTime: 30
+  slowAmount: 0.5
+  lineRenderer: {fileID: 0}
+  impactEffect: {fileID: 0}
+  impactLight: {fileID: 0}
   enemyTag: Enemy
   partToRotate: {fileID: 4398295856703953280}
   turnSpeed: 10
-  bulletPrefab: {fileID: 3794253678190293106, guid: 24ac1c65ea860954a9955d0bb2eebc90, type: 3}
   firePoint: {fileID: 8227703111269014204}
 --- !u!1 &8677647464658167378
 GameObject:
@@ -264,7 +270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8227703111269014204}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

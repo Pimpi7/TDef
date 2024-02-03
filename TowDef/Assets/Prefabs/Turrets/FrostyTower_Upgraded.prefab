@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 7143862900235700177}
   - component: {fileID: 6404109430390353766}
   m_Layer: 0
-  m_Name: FrostyTower
+  m_Name: FrostyTower_Upgraded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,7 +59,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.91, y: 0, z: 66.2}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1250221997936689490}
@@ -79,12 +79,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 086cf2a7ba51bba4098db2a734fda571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 15
+  range: 20
   bulletPrefab: {fileID: 0}
   fireRate: 1
   useLaser: 1
-  damageOverTime: 30
-  slowAmount: 0.5
+  damageOverTime: 33
+  slowAmount: 0.7
   lineRenderer: {fileID: 6404109430390353766}
   impactEffect: {fileID: 2523699674445721980}
   impactLight: {fileID: 4997424474745436588}
@@ -290,9 +290,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 272d9f5999082b64b915436ab3ddfcf5, type: 2}
-  - {fileID: 2100000, guid: ffb4c6f77a1d9184a82fcee8649a57d1, type: 2}
-  - {fileID: 2100000, guid: 466733c4171fdba47a214f30d1ba14ac, type: 2}
+  - {fileID: 2100000, guid: 566f2f1d3bfbbcd4dba0eac623583a12, type: 2}
+  - {fileID: 2100000, guid: db1149d998251c04b9013201f6feb0aa, type: 2}
+  - {fileID: 2100000, guid: 52d52c0d4c0550b4ba9792c9e8700f0b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -375,8 +375,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5296f86186d5721489b4a8064ccae86e, type: 2}
-  - {fileID: 2100000, guid: 8a56e4c82079d8246814dba9f3625f82, type: 2}
+  - {fileID: 2100000, guid: 9f191051a13b3994699c60a2c32d89dd, type: 2}
+  - {fileID: 2100000, guid: ed009fe3704307f4d94fb56bb2efe118, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -9,5 +9,10 @@ public class TurretBlueprint
     // Other properties related to your turret blueprint
     public GameObject upgradedPrefab;
     public int upgradeCost;
+
+    public int GetSellAmount()
+    {
+        return cost / 2;
+    }
 }
 

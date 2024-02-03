@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4451207, g: 0.4947223, b: 0.5737985, a: 1}
+  m_IndirectSpecularColor: {r: 0.4451208, g: 0.4947225, b: 0.57379884, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 803b0cca0fbaf425bb846276bc744943, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2b362535517d484a856044529463a61, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -857,7 +857,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 82621098}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1453140797}
+        m_TargetAssemblyTypeName: NodeUI, Assembly-CSharp
+        m_MethodName: Sell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &82621098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7959,7 +7971,7 @@ GameObject:
   - component: {fileID: 832426537}
   - component: {fileID: 832426536}
   m_Layer: 0
-  m_Name: Cost
+  m_Name: Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13285,22 +13297,22 @@ MonoBehaviour:
     prefab: {fileID: 7368797652040327951, guid: fbb38b3959a23354bbebe08ff7172e21, type: 3}
     cost: 100
     upgradedPrefab: {fileID: 7368797652040327951, guid: 9ce4bef7197e552449db2411377f2006, type: 3}
-    upgradeCost: 60
+    upgradeCost: 50
   missileLauncher:
     prefab: {fileID: 5359197967769044295, guid: 60e481b2ec23b4272a21b269dcf53ef3, type: 3}
     cost: 250
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 5359197967769044295, guid: 32076d442814f5d44908b3525c2c0fe8, type: 3}
+    upgradeCost: 125
   laserBeamer:
     prefab: {fileID: 8681910723370502162, guid: 38220e91ae3dd0141b03ac9033e4edd8, type: 3}
     cost: 350
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 8681910723370502162, guid: 50d448f22ecb2c34ba6a4f21ac1a6f3c, type: 3}
+    upgradeCost: 175
   frostyTower:
     prefab: {fileID: 4893485268976772365, guid: 560bf655a91ebe045ae3926e1a7f6828, type: 3}
     cost: 400
-    upgradedPrefab: {fileID: 0}
-    upgradeCost: 0
+    upgradedPrefab: {fileID: 4893485268976772365, guid: 28662f062069a4545b00782e2afeca4e, type: 3}
+    upgradeCost: 200
 --- !u!1001 &1365843384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14331,6 +14343,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ui: {fileID: 1955256570}
   upgradeCost: {fileID: 303236289}
+  sellAmount: {fileID: 832426536}
   upgradeButton: {fileID: 282614820}
 --- !u!4 &1453140798
 Transform:
@@ -17175,6 +17188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6314c1d776fa04e338749952708c975f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sellEffect: {fileID: 2828839596944538584, guid: 1ff2205fbb5ca0345894a6debf61d8ef, type: 3}
   nodeUI: {fileID: 1453140797}
 --- !u!114 &1745328944
 MonoBehaviour:
@@ -17459,7 +17473,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c0342fe87152a7c418871f0811e3ca41, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 748796c15e6328440844572ec63a5c38, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -20581,8 +20595,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 7ac7eeaffb977c34fbc936a00017d574, type: 3}
+  m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 0

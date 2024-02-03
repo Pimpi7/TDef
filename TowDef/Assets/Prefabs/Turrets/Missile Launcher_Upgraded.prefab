@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 441317588994846916}
   - component: {fileID: 8850212890479624987}
   m_Layer: 0
-  m_Name: Missile Launcher
+  m_Name: Missile Launcher_Upgraded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,7 +58,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -27.33, y: 1.403, z: 5.53}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3228840178712303594}
@@ -77,8 +77,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 086cf2a7ba51bba4098db2a734fda571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 30
-  bulletPrefab: {fileID: 2933800724590177274, guid: ac6179d04c771d04bb7d47469a300796, type: 3}
+  range: 33
+  bulletPrefab: {fileID: 2933800724590177274, guid: 03e4c84a425ed3b458e6065d09db20d7, type: 3}
   fireRate: 0.25
   useLaser: 0
   damageOverTime: 30
@@ -151,8 +151,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c7de431bac6574ede830d7ea638229eb, type: 2}
-  - {fileID: 2100000, guid: a857084a1c728411f8902766de1d96cc, type: 2}
+  - {fileID: 2100000, guid: cc0d15a052fb00a4abcacc3bf84197fb, type: 2}
+  - {fileID: 2100000, guid: 53fb69deb69e9e44783c48fe390288ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -268,8 +268,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c7de431bac6574ede830d7ea638229eb, type: 2}
-  - {fileID: 2100000, guid: a857084a1c728411f8902766de1d96cc, type: 2}
+  - {fileID: 2100000, guid: 53fb69deb69e9e44783c48fe390288ea, type: 2}
+  - {fileID: 2100000, guid: cc0d15a052fb00a4abcacc3bf84197fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

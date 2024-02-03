@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -454857502957749149, guid: adf360a40d2418b43a27b16c116dfba9, type: 3}
+  - {fileID: 2100000, guid: 8211f545a3f24474cb384cd4d901f5b2, type: 2}
   - {fileID: 772359722248288438, guid: adf360a40d2418b43a27b16c116dfba9, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -145,9 +145,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -8418019662413110148, guid: adf360a40d2418b43a27b16c116dfba9, type: 3}
+  - {fileID: 2100000, guid: 3832f74ff58a93d4fb7be4f77efaa0ae, type: 2}
   - {fileID: 7347949212528627919, guid: adf360a40d2418b43a27b16c116dfba9, type: 3}
-  - {fileID: 4387638107276554849, guid: adf360a40d2418b43a27b16c116dfba9, type: 3}
+  - {fileID: 2100000, guid: 6079c9bf233322743b2afbf2209e4353, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 9451970576399178}
   - component: {fileID: 9034131107756813264}
   m_Layer: 0
-  m_Name: Laser Beamer
+  m_Name: Laser Beamer_Upgraded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -261,7 +261,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.64, y: 0, z: 7.3}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3830738318716726268}
@@ -281,11 +281,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 086cf2a7ba51bba4098db2a734fda571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 20
+  range: 25
   bulletPrefab: {fileID: 0}
   fireRate: 1
   useLaser: 1
-  damageOverTime: 30
+  damageOverTime: 37
   slowAmount: 0
   lineRenderer: {fileID: 9034131107756813264}
   impactEffect: {fileID: 4546252475803674965}

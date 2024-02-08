@@ -8758,6 +8758,10 @@ PrefabInstance:
       propertyPath: turret
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: -857924633085990470, guid: 55479533383746344a470e0ca96aa779, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4119950350549349461, guid: 55479533383746344a470e0ca96aa779, type: 3}
       propertyPath: m_Name
       value: Suolo

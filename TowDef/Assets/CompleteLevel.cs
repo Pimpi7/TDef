@@ -1,19 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-public class GameOver : MonoBehaviour
+
+public class CompleteLevel : MonoBehaviour
 {
     public string menuSceneName = "MainMenu";
-
     public SceneFader sceneFader;
-
-    public void Retry()
+    
+    public void Continue ()
     {
-        sceneFader.FadeTo(SceneManager.GetActiveScene().name);
+
     }
-    public void Menu ()
+    public void Menu()
     {
         sceneFader.FadeTo(menuSceneName);
     }

@@ -24,7 +24,12 @@ public class MainMenu : MonoBehaviour
 
     public void Login() 
     {
-        Debug.Log("Clicked");
         loginCanvas.SetActive(true);
+    }
+
+     public void backToMenu() 
+    {
+        sceneFader.FadeTo("MainMenu");
+            
     }
 }

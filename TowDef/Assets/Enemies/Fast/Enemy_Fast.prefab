@@ -167,7 +167,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 9640e5f21d9ab4ab5bd09d354863256d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -302,7 +302,7 @@ MonoBehaviour:
   startHealth: 35
   earnedMoney: 20
   deathEffect: {fileID: 6253901255870213539, guid: ba3a48063a25e44a8a846a7ee16bc954, type: 3}
-  HealthBar: {fileID: 0}
+  HealthBar: {fileID: 6730821930178401891}
 --- !u!114 &-4206968978947716238
 MonoBehaviour:
   m_ObjectHideFlags: 0

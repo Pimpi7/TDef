@@ -15524,7 +15524,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1478843939
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17684,6 +17684,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1547451852}
   timeBetweenWaves: 2
   waveCountdownText: {fileID: 1911871435}
+  gameManager: {fileID: 1745328945}
 --- !u!114 &1745328943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17725,6 +17726,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1231512336}
+  nextLevel: Level02
+  levelToUnlock: 2
+  sceneFader: {fileID: 552367777}
 --- !u!114 &1745328946
 MonoBehaviour:
   m_ObjectHideFlags: 0

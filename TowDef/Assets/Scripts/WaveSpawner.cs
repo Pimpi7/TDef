@@ -57,8 +57,10 @@ public class WaveSpawner : MonoBehaviour
         waveIndex++;
     }
 
+
     void SpawnEnemy(GameObject enemy)
     {
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
+        EnemiesAlive++;
     }
 }

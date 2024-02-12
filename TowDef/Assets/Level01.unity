@@ -17666,12 +17666,12 @@ MonoBehaviour:
   - enemy: {fileID: 3838824743469021571, guid: ec00304b349664047a728baba11f0c24, type: 3}
     count: 2
     rate: 2
-  - enemy: {fileID: 0}
-    count: 0
-    rate: 0
+  - enemy: {fileID: 3838824743469021571, guid: 92482b19ff6de4212be315dafaff1ffa, type: 3}
+    count: 2
+    rate: 2
   enemyPrefab: {fileID: 3338733573181701081, guid: 67f0b10af9705b248b66164c9561f6fa, type: 3}
   spawnPoint: {fileID: 1547451852}
-  timeBetweenWaves: 2
+  timeBetweenWaves: 5
   waveCountdownText: {fileID: 1911871435}
   gameManager: {fileID: 1745328945}
 --- !u!114 &1745328943
@@ -17701,7 +17701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startMoney: 999
-  startLives: 1
+  startLives: 10
 --- !u!114 &1745328945
 MonoBehaviour:
   m_ObjectHideFlags: 0

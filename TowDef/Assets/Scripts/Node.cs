@@ -62,8 +62,8 @@ public class Node : MonoBehaviour
 
         PlayerStats.Money -= blueprint.cost;
         // Instantiate the prefab directly from t
-        GameObject t = Instantiate(blueprint.prefab, GetBuildPosition(), Quaternion.identity);
-        turret = t;
+        GameObject _turret = Instantiate(blueprint.prefab, GetBuildPosition(), Quaternion.identity);
+        turret = _turret;
 
         turretBlueprint = blueprint;
         /*GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity);
@@ -114,7 +114,6 @@ public class Node : MonoBehaviour
         
         if (!buildManager.CanBuild)
             return;
-            Debug.Log("Can't build there");
 
         if (buildManager.HasMoney)
         {
@@ -129,8 +128,8 @@ public class Node : MonoBehaviour
 
     void OnMouseExit()
     {
-        if (EventSystem.current.IsPointerOverGameObject())
-            return;
+        /*if (EventSystem.current.IsPointerOverGameObject())
+            return;*/
         
         rend.material.color = startColor;
     }

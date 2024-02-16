@@ -13189,77 +13189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46cb1ede3b7674ebe89ad95ec9c47476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-  roundsText: {fileID: 528986487}
---- !u!1001 &1280014563
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 358407018}
-    m_Modifications:
-    - target: {fileID: 4119950350549349461, guid: 55479533383746344a470e0ca96aa779, type: 3}
-      propertyPath: m_Name
-      value: Node (171)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4119950350549349461, guid: 55479533383746344a470e0ca96aa779, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8969799826832883820, guid: 55479533383746344a470e0ca96aa779, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 18.52
-      objectReference: {fileID: 0}
-    - target: {fileID: 8969799826832883820, guid: 55479533383746344a470e0ca96aa779, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8969799826832883820, guid: 55479533383746344a470e0ca96aa779, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 44.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8969799826832883820, guid: 55479533383746344a470e0ca96aa779, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8969799826832883820, guid: 55479533383746344a470e0ca96aa779, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8969799826832883820, guid: 55479533383746344a470e0ca96aa779, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8969799826832883820, guid: 55479533383746344a470e0ca96aa779, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8969799826832883820, guid: 55479533383746344a470e0ca96aa779, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8969799826832883820, guid: 55479533383746344a470e0ca96aa779, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8969799826832883820, guid: 55479533383746344a470e0ca96aa779, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 55479533383746344a470e0ca96aa779, type: 3}
---- !u!4 &1280014564 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8969799826832883820, guid: 55479533383746344a470e0ca96aa779, type: 3}
-  m_PrefabInstance: {fileID: 1280014563}
-  m_PrefabAsset: {fileID: 0}
-=======
   roundsText: {fileID: 1272261464}
->>>>>>> Stashed changes
 --- !u!1001 &1287426421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22365,9 +22295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46cb1ede3b7674ebe89ad95ec9c47476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-  roundsText: {fileID: 1467859806}
-=======
   roundsText: {fileID: 2059623320}
 --- !u!1 &2060010406
 GameObject:
@@ -22474,7 +22401,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060010406}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
->>>>>>> Stashed changes
 --- !u!1 &2070911087
 GameObject:
   m_ObjectHideFlags: 0

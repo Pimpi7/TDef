@@ -45,7 +45,8 @@ public class EnemyMovement : MonoBehaviour
     void EndPath () 
     {
         PlayerStats.Lives--;
-        Destroy(gameObject);
         WaveSpawner.EnemiesAlive--;
+        Destroy(gameObject);
     }
+        
 }

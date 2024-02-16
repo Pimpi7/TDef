@@ -21,7 +21,7 @@ public class SceneFader : MonoBehaviour
 
     IEnumerator FadeIn()
     {
-        float t = 1f;
+        float t = 0.7f;
         
         while (t>0f)
         {

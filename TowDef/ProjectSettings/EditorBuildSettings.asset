@@ -18,5 +18,6 @@ EditorBuildSettings:
     path: Assets/Level02.unity
     guid: 05488d9b04ef5ca4d969d2c774d61b22
   m_configObjects:
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: f42eac7a5fa210a43a2dfc8a72a226a8, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: bfb2ce97d8bb74f7aa863331497c1e3d, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 2cdcade0549074ea5b0f4db42e9f7131, type: 2}

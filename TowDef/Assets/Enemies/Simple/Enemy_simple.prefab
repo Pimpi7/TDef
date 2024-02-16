@@ -302,7 +302,7 @@ MonoBehaviour:
   startHealth: 100
   earnedMoney: 50
   deathEffect: {fileID: 6253901255870213539, guid: 2c71acbecb504074581e83c7308d90c5, type: 3}
-  healthBar: {fileID: 6730821930178401891}
+  HealthBar: {fileID: 6730821930178401891}
 --- !u!114 &-4206968978947716238
 MonoBehaviour:
   m_ObjectHideFlags: 0

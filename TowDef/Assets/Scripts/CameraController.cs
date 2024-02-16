@@ -4,8 +4,6 @@ public class CameraController : MonoBehaviour
 {
     public float panSpeed = 30f;
     public float zoomSpeed = 0.1f;
-    public float minY = 10f;
-    public float maxY = 80f;
 
     private Vector2 touchStart;
 
@@ -48,11 +46,11 @@ public class CameraController : MonoBehaviour
             float deltaMagnitudeDiff = prevTouchDeltaMag - touchDeltaMag;
 
             Vector3 pos = transform.position;
-            pos.y += deltaMagnitudeDiff * zoomSpeed;
-            pos.y = Mathf.Clamp(pos.y, minY, maxY);
+            pos.y += deltaMagnitudeDiff * zoomSpeed; // Zoom sull'asse Y
             transform.position = pos;
         }
     }
 }
+
 
 

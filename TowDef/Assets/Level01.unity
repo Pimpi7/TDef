@@ -9967,7 +9967,6 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
-  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -9994,14 +9993,14 @@ Camera:
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.9622642, g: 0.9502611, b: 0.9114276, a: 0}
-  m_projectionMatrixMode: 1
+  m_projectionMatrixMode: 2
   m_GateFitMode: 2
   m_FOVAxisMode: 0
   m_Iso: 200
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 50
+  m_FocalLength: 18.130024
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -10016,7 +10015,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 67
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -10029,7 +10028,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -10061,25 +10060,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42156255ead1221498df4ec5c2e8e0fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panSpeed: 30
-  panBorderThickness: 10
-  scrollSpeed: 5
-  minY: 10
-  maxY: 80
---- !u!114 &963194230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1dabc325c06fe4c3db0fb7264f65cfe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dragSpeed: 2
-  zoomSpeed: 1
+  panSpeed: 100
+  zoomSpeed: 0.1
 --- !u!1001 &965138347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14543,8 +14525,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 267.09326, y: -630.29956}
-  m_SizeDelta: {x: 472.9076, y: 1201.4949}
+  m_AnchoredPosition: {x: 324.31, y: -720}
+  m_SizeDelta: {x: 648.6222, y: 1410.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359163485
 MonoBehaviour:
@@ -14559,14 +14541,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.03773582, g: 0.03773582, b: 0.03773582, a: 0.33333334}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.69411767}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14608,7 +14590,7 @@ MonoBehaviour:
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 1
-  m_ChildScaleHeight: 0
+  m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
 --- !u!114 &1359163488
 MonoBehaviour:
@@ -18710,7 +18692,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1547451852}
   timeBetweenWaves: 2
   waveCountdownText: {fileID: 1911871435}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 1745328945}
 --- !u!114 &1745328943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18752,7 +18734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1231512336}
-  completeLevelUI: {fileID: 0}
+  completeLevelUI: {fileID: 1478843938}
 --- !u!114 &1745328946
 MonoBehaviour:
   m_ObjectHideFlags: 0

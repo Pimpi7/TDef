@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44512063, g: 0.4947223, b: 0.57379824, a: 1}
+  m_IndirectSpecularColor: {r: 0.4451208, g: 0.4947225, b: 0.57379884, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -359,7 +359,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 191.55, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &60866292
 MonoBehaviour:
@@ -14543,8 +14543,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 780, y: -622}
-  m_SizeDelta: {x: 1498.7212, y: 972.43}
+  m_AnchoredPosition: {x: 267.09326, y: -630.29956}
+  m_SizeDelta: {x: 472.9076, y: 1201.4949}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359163485
 MonoBehaviour:
@@ -14597,17 +14597,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 71
+    m_Left: 172
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 3
   m_Spacing: 10.89
-  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
+  m_ChildControlWidth: 1
   m_ChildControlHeight: 1
-  m_ChildScaleWidth: 0
+  m_ChildScaleWidth: 1
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
 --- !u!114 &1359163488
@@ -16553,6 +16553,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuSceneName: MainMenu
+  nextLevel: Level02
+  levelToUnlock: 2
   sceneFader: {fileID: 0}
 --- !u!1001 &1488203192
 PrefabInstance:
@@ -17740,10 +17742,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 60866291}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 95.775, y: -103.71}
-  m_SizeDelta: {x: 191.55, y: 207.42}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -95.774994, y: 103.71005}
+  m_SizeDelta: {x: 191.54999, y: 207.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1641589100
 MonoBehaviour:
@@ -17825,7 +17827,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 191.549, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1641615465
 MonoBehaviour:
@@ -18708,6 +18710,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 1547451852}
   timeBetweenWaves: 2
   waveCountdownText: {fileID: 1911871435}
+  gameManager: {fileID: 0}
 --- !u!114 &1745328943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18749,6 +18752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1231512336}
+  completeLevelUI: {fileID: 0}
 --- !u!114 &1745328946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18907,7 +18911,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 191.549, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1761074928
 MonoBehaviour:
@@ -22439,7 +22443,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 191.549, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2070911089
 MonoBehaviour:

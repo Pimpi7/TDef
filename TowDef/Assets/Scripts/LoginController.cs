@@ -11,7 +11,8 @@ namespace Unity.Services.Authentication.PlayerAccounts.Samples
         [Header("Debug Stuff")]
         public Text m_StatusText;
         public Text m_ExceptionText;
-        public GameObject buttons;
+        public GameObject menuButton;
+        public GameObject signoutButton;
         public GameObject welcomeCanvas;
         public GameObject goodbyeCanvas;
 
@@ -82,7 +83,7 @@ namespace Unity.Services.Authentication.PlayerAccounts.Samples
             {
                 welcomeCanvas.SetActive(true);
 
-                buttons.SetActive(true);
+                signoutButton.SetActive(true);
                 statusBuilder.AppendLine(GetPlayerInfoText());
                 statusBuilder.AppendLine($"PlayerId: <b>{AuthenticationService.Instance.PlayerId}</b>");
             } else 

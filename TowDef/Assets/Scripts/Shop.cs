@@ -32,7 +32,7 @@ public class Shop : MonoBehaviour
 
     public void SelectFrostyTower()
     {
-        Debug.Log ("Frosty tower purchased");
+        Debug.Log ("Frosty Tower purchased");
         buildManager.SelectTurretToBuild(frostyTower);
     }
 }

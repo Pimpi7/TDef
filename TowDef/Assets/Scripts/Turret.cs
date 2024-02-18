@@ -105,7 +105,7 @@ public class Turret : MonoBehaviour
     private void Laser()
     {
         //damage
-        targetEnemy.GetComponent<Enemy>().TakeDamage(damageOverTime*Time.deltaTime);
+        targetEnemy.TakeDamage(damageOverTime*Time.deltaTime);
         targetEnemy.Slow(slowAmount);
 
         // grapich stuff

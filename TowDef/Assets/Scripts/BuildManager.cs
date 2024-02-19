@@ -21,15 +21,15 @@ public class BuildManager : MonoBehaviour
     private TurretBlueprint turretToBuild;
     private Node selectedNode;
     public NodeUI nodeUI;
+     CameraController cameraController;
 
     public bool CanBuild { get { return turretToBuild != null; } }
     public bool HasMoney { get { return PlayerStats.Money >= turretToBuild.cost; } }
 
     public void SelectNode(Node node) 
     {
-        if(selectedNode == node) 
+        if(selectedNode == node || Input.touchCount==2) 
         {
-            //Debug.Log("Ehi");
             DeselectNode();
             return;
         }

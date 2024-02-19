@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
     public int damage = 50;
     public float explosionRadius = 0f;
     public GameObject impactEffect;
+    public AudioSource explosionSound;
     public void Seek (Transform _target)
     {
         target = _target;
@@ -51,6 +52,7 @@ public class Bullet : MonoBehaviour
     void Explode ()
     {
         Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
+        explosionSound.Play();
         foreach(Collider collider in colliders)
         {
             if (collider.tag == "Enemy")

@@ -18,6 +18,8 @@ public class Turret : MonoBehaviour
     public GameObject bulletPrefab;
     public float fireRate = 1f;
     private float fireCountdown = 0f;
+    public AudioSource standardSound;
+    public AudioSource rocketSound;
 
     [Header("Use Laser")]
     public bool useLaser = false;
@@ -26,23 +28,24 @@ public class Turret : MonoBehaviour
     public LineRenderer lineRenderer;
     public ParticleSystem impactEffect;
     public Light impactLight;
-    
+    public AudioSource beamSound;
+
 
     [Header("Unity Setup Fields")]
     public string enemyTag = "Enemy";
     public Transform partToRotate;
     public float turnSpeed = 10f;
 
-   
+
     public Transform firePoint;
-    
+
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
 
-    void UpdateTarget() 
+    void UpdateTarget()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
         float shortestDistance = Mathf.Infinity;
@@ -50,7 +53,7 @@ public class Turret : MonoBehaviour
         foreach (GameObject enemy in enemies)
         {
             float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
-            if (distanceToEnemy < shortestDistance) 
+            if (distanceToEnemy < shortestDistance)
             {
                 shortestDistance = distanceToEnemy;
                 nearestEnemy = enemy;
@@ -60,7 +63,8 @@ public class Turret : MonoBehaviour
         {
             target = nearestEnemy.transform;
             targetEnemy = nearestEnemy.GetComponent<Enemy>();
-        } else
+        }
+        else
         {
             target = null;
         }
@@ -71,13 +75,14 @@ public class Turret : MonoBehaviour
     {
         if (target == null)
         {
-            if(useLaser)
+            if (useLaser)
             {
-                if(lineRenderer.enabled)
+                if (lineRenderer.enabled)
                 {
-                    lineRenderer.enabled=false;
+                    beamSound.Stop();
+                    lineRenderer.enabled = false;
                     impactEffect.Stop();
-                    impactLight.enabled=false;
+                    impactLight.enabled = false;
                 }
             }
             return;
@@ -86,31 +91,33 @@ public class Turret : MonoBehaviour
         //Target lock on
         LockOnTarget();
 
-        if (useLaser) 
+        if (useLaser)
         {
             Laser();
         }
         else
         {
-        if(fireCountdown <= 0f)
-        {
-            Shoot();
-            fireCountdown = 1f / fireRate;
-        }
+            if (fireCountdown <= 0f)
+            {
+                Shoot();
+                fireCountdown = 1f / fireRate;
+            }
 
-        fireCountdown -= Time.deltaTime;
+            fireCountdown -= Time.deltaTime;
         }
     }
 
     private void Laser()
     {
+
         //damage
-        targetEnemy.TakeDamage(damageOverTime*Time.deltaTime);
+        targetEnemy.TakeDamage(damageOverTime * Time.deltaTime);
         targetEnemy.Slow(slowAmount);
 
         // grapich stuff
-        if(!lineRenderer.enabled) 
+        if (!lineRenderer.enabled)
         {
+            beamSound.Play();
             lineRenderer.enabled = true;
             impactEffect.Play();
             impactLight.enabled = true;
@@ -118,10 +125,10 @@ public class Turret : MonoBehaviour
         lineRenderer.SetPosition(0, firePoint.position);
         lineRenderer.SetPosition(1, target.position);
 
-        Vector3 dir = firePoint.position-target.position;
-                                     
-        impactEffect.transform.position= target.position+dir.normalized;
-        
+        Vector3 dir = firePoint.position - target.position;
+
+        impactEffect.transform.position = target.position + dir.normalized;
+
         impactEffect.transform.rotation = Quaternion.LookRotation(dir);
     }
 
@@ -130,16 +137,24 @@ public class Turret : MonoBehaviour
         Vector3 dir = target.position - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(dir);
         Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnSpeed).eulerAngles;
-        partToRotate.rotation = Quaternion.Euler (0f, rotation.y, 0f);
+        partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
     }
     void Shoot()
     {
-        GameObject bulletGO = (GameObject) Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
 
         if (bullet != null)
         {
+            if (bullet.explosionRadius > 0)
+            {
+                rocketSound.Play();
+            }
+            else
+            {
+                standardSound.Play();
+            }
             bullet.Seek(target);
         }
     }
@@ -149,4 +164,6 @@ public class Turret : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
     }
+
+       
 }

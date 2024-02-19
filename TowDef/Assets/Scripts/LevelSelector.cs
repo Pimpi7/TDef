@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class LevelSelector : MonoBehaviour
 {
     public SceneFader sceneFader;
+    public string menuSceneName = "MainMenu";
     public Button[] levelButtons;
     public new AudioSource audio;
     void Start()
@@ -24,7 +25,7 @@ public class LevelSelector : MonoBehaviour
 
     public void Menu()
     {
-        sceneFader.FadeTo(menuSceneName);
+        sceneFader.FadeTo("MainMenu");
     }
 
     public void playSound() 

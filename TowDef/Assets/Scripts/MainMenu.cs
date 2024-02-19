@@ -7,6 +7,7 @@ using Unity.Services.Authentication;
 public class MainMenu : MonoBehaviour
 {
    public string levelToLoad = "MainLevel";
+   public new AudioSource audio;
 
     public SceneFader sceneFader;
     public GameObject loginCanvas;
@@ -31,5 +32,10 @@ public class MainMenu : MonoBehaviour
     {
         sceneFader.FadeTo("MainMenu");
             
+    }
+
+    public void playSound() 
+    {
+        audio.Play();
     }
 }

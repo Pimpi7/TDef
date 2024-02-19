@@ -5,8 +5,8 @@ public class GameManager : MonoBehaviour
 
     public static bool GameIsOver;
     public GameObject gameOverUI;
-    public GameObject pauseButton;
     public GameObject completeLevelUI;
+    public GameObject playPause;
     // Update is called once per frame
     void Start()
     {
@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     {
         GameIsOver = true;
         gameOverUI.SetActive(true);
-        pauseButton.SetActive(false);
+        playPause.SetActive(false);
     }
 
     public void WinLevel()
@@ -37,6 +37,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("Level won");
         GameIsOver = true;
         completeLevelUI.SetActive(true);
-        pauseButton.SetActive(false);
+        playPause.SetActive(false);
     }
 }

@@ -7,8 +7,6 @@ public class LevelSelector : MonoBehaviour
     public string menuSceneName = "MainMenu";
     public Button[] levelButtons;
     public new AudioSource audio;
-    public string menuSceneName = "MainMenu";
-    public SceneFader sceneFader;
     void Start()
     {
         int levelReached = PlayerPrefs.GetInt("levelReached", 1);
@@ -23,11 +21,6 @@ public class LevelSelector : MonoBehaviour
     public void Select(string levelName)
     {
         sceneFader.FadeTo(levelName);
-    }
-
-    public void Menu()
-    {
-        sceneFader.FadeTo("MainMenu");
     }
 
     public void playSound() 

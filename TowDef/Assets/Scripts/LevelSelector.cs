@@ -5,7 +5,7 @@ public class LevelSelector : MonoBehaviour
 {
     public SceneFader fader;
     public Button[] levelButtons;
-
+    public new AudioSource audio;
     void Start()
     {
         int levelReached = PlayerPrefs.GetInt("levelReached", 1);
@@ -20,5 +20,10 @@ public class LevelSelector : MonoBehaviour
     public void Select(string levelName)
     {
         fader.FadeTo(levelName);
+    }
+
+    public void playSound() 
+    {
+        audio.Play();
     }
 }

@@ -32,8 +32,8 @@ public class Node : MonoBehaviour
 
     void OnMouseDown ()
     {
-          if (EventSystem.current.IsPointerOverGameObject())
-            return;
+        if (EventSystem.current.IsPointerOverGameObject())
+            return;        
 
         if (turret != null)
         {
@@ -43,6 +43,7 @@ public class Node : MonoBehaviour
 
          if (!buildManager.CanBuild)
             return;
+
         // SI COSTRUISCE 
         BuildTurret(buildManager.GetTurretToBuild());
     }
@@ -115,14 +116,14 @@ public class Node : MonoBehaviour
         if (!buildManager.CanBuild)
             return;
 
-        if (buildManager.HasMoney)
+       /* if (buildManager.HasMoney)
         {
             // ogni volta che il mouse ci passa sopra si attiva 
             rend.material.color = hoverColor;
         } else
         {
             rend.material.color = notEnoughMoneyColor;
-        }
+        }*/
         
     }
 

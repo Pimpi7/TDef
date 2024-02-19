@@ -7,6 +7,9 @@ public class CameraController : MonoBehaviour
 
     private Vector2 touchStart;
 
+    [HideInInspector]
+    public Touch touch;
+
     // Update is called once per frame
     void Update()
     {
@@ -18,7 +21,7 @@ public class CameraController : MonoBehaviour
 
         if (Input.touchCount == 1)
         {
-            Touch touch = Input.GetTouch(0);
+            touch = Input.GetTouch(0);
 
             if (touch.phase == TouchPhase.Began)
             {
@@ -47,6 +50,7 @@ public class CameraController : MonoBehaviour
 
             Vector3 pos = transform.position;
             pos.y += deltaMagnitudeDiff * zoomSpeed; // Zoom sull'asse Y
+            pos.y = Mathf.Max(pos.y, 0);
             transform.position = pos;
         }
     }

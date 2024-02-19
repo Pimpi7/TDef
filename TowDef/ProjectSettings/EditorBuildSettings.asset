@@ -18,6 +18,10 @@ EditorBuildSettings:
     path: Assets/Level02.unity
     guid: 05488d9b04ef5ca4d969d2c774d61b22
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 83f8cc570a5954f48ac5ecc2d181dcdb, type: 2}
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: f42eac7a5fa210a43a2dfc8a72a226a8, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: bfb2ce97d8bb74f7aa863331497c1e3d, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 3da1901a21148a8428fd95990d1a9a35, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 2cdcade0549074ea5b0f4db42e9f7131, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 459674f7440397845a2539378a7a87a7, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d9e40637050126846b9a20591c9c2bee, type: 2}
